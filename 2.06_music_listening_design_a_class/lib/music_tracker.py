@@ -1,28 +1,31 @@
 class MusicTracker():
     # User-facing properties:
-    #// We need to track track my music listening
+    #//As a user
+    # We can keep track of my music listening
+    # I want to add tracks I've listened to and see a list of them.
     #   
 
-    def __init__(self, music_list):
+    def __init__(self):
         self.music_list = []
         # Parameters:
-        #   music_list: list, representing a list of musik
+        #   No
         # Side effects:
-        #   Sets the name property of the self object
-        pass # No code here yet
+        #   We create self.music_list attribute
 
-    def add(self, music_list):
+
+    def add(self, song):
         # Parameters:
-        #   task: string representing a single task
+        #   song: representing a song
         # Returns:
         #   Nothing
         # Side-effects
-        #   Saves the task to the self object
-        pass # No code here yet
+        #   Adds the song to the music list
+        self.music_list.append(song) 
+        
 
     def show_music_list(self):
         # Returns:
-        #   A string reminding the user to do the task
+        #   Songs list
         # Side-effects:
-        #   Throws an exception if no task is set
-        pass # No code here yet
+        return self.music_list
+        
