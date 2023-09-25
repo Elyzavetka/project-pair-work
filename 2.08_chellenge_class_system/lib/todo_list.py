@@ -16,15 +16,25 @@ class TodoList:
         #   A list of Todo instances representing the todos that are not complete
         incomplete_list = []
         for item in self._todolist:
-            incomplete_list.append(item.task)
+            if item.complete_property == False:
+                incomplete_list.append(item.task)
         return incomplete_list
 
     def complete(self):
+        complete_list = []
+        for item in self._todolist:
+            if item.complete_property == True:
+                complete_list.append(item.task)
+        return complete_list
+
         # Returns:
         #   A list of Todo instances representing the todos that are complete
         pass
 
     def give_up(self):
+        for item in self._todolist:
+            item.complete_property = True
+
         # Returns:
         #   Nothing
         # Side-effects:

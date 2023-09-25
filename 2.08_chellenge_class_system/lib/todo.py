@@ -10,9 +10,11 @@ class Todo:
         #   Sets the task property
         #   Sets the complete property to False
         self.task = task
-        
+        self.complete_property = False
+
 
     def mark_complete(self):
+        self.complete_property = True
         # Returns:
         #   Nothing
         # Side-effects:
