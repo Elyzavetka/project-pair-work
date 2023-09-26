@@ -29,7 +29,7 @@ class TodoList:
 
         # Returns:
         #   A list of Todo instances representing the todos that are complete
-        pass
+        
 
     def give_up(self):
         for item in self._todolist:
@@ -39,4 +39,4 @@ class TodoList:
         #   Nothing
         # Side-effects:
         #   Marks all todos as complete
-        pass
+        
